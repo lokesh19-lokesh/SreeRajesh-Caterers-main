@@ -54,9 +54,9 @@
         <div class="container bgs pb-4">
             <nav class="navbar navbar-expand-lg bgs navbar-dark py-2 py-lg-0">
                 <a href="/" class="navbar-brand">
-                    <img class="img-fluid"  src="img/Sree Rajesh Caterers.png" alt="Logo">
-                    <img class="img-fluid"  src="media/158526-816999744-tiny-unscreen.gif" alt="Logo">
-                    
+                    <img class="img-fluid" src="img/Sree Rajesh Caterers.png" alt="Logo">
+                    <img class="img-fluid" src="media/158526-816999744-tiny-unscreen.gif" alt="Logo">
+
                 </a>
 
 
@@ -68,9 +68,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        
+
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        
+
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <!-- <a href="product.html" class="nav-item nav-link">Products</a> -->
                         <a href="blog.html" class="nav-item nav-link">Blog</a>
@@ -95,13 +95,13 @@
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                  
+
                 </div>
             </nav>
         </div>
     </div>
     <!-- Navbar End -->
- 
+
 
     <!-- Carousel Start -->
     <div class="container-fluid px-0 mb-5">
@@ -110,12 +110,13 @@
                 <!-- Carousel Item 1 -->
                 <div class="slider1 active">
                     <img class="w-100 mobile" src="img/bannerss11.gif" alt="Image">
-                    <img class="w-100 h-40" src="img/bannerss11.gif" alt="Image">
+                    <img class="w-100 h-40 desktop-img" src="img/bannerss11.gif" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 text-center pt-5">
-                                    <h1 class="display-3 text-white mb-4 animated zoomIn">
+                                    <h1 class="display-3 text-white mb-4 animated zoomIn"
+                                        style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
                                         Welcome to <br />
                                         <span class="text-white">Sree Rajesh Caterers</span>
                                     </h1>
@@ -124,16 +125,17 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Carousel Item 2 -->
                 <div class="slider2">
                     <img class="w-100 mobile" src="img/nonveghero.png" alt="Image">
-                    <img class="w-100 h-40" src="img/bannersss22.gif" alt="Image">
+                    <img class="w-100 h-40 desktop-img" src="img/bannersss22.gif" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 text-center pt-5">
-                                    <h1 class="display-3 text-white mb-4 animated zoomIn">
+                                    <h1 class="display-3 text-white mb-4 animated zoomIn"
+                                        style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
                                         Welcome to <br />
                                         <span class="text-white">Sree Rajesh Caterers</span>
                                     </h1>
@@ -145,7 +147,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- JavaScript for Carousel -->
     <script>
         $(document).ready(function () {
@@ -178,238 +180,244 @@
             });
         });
     </script>
-    
 
 
-        <style>
-            .header-carousel .slider1, .header-carousel .slider2{
-/* height: 100vh; */
-object-fit: cover;
-;
+
+    <style>
+        .header-carousel .slider1,
+        .header-carousel .slider2 {
+            object-fit: cover;
+        }
+
+        .mobile {
+            display: none !important;
+        }
+
+        @media(max-width:992px) {
+            .mobile {
+                display: block !important;
             }
-            .mobile{
+
+            .desktop-img {
                 display: none !important;
-
             }
-            @media(max-width:992px){
-                .mobile{
-                display: block;
 
-            } 
-            #myVideo{
+            #myVideo {
                 display: none;
             }
-            }
-        </style>
-        <!-- Carousel End -->
-        <h1 class="fs-5 fw-medium fst-italic text-primary text-center">ABOUT US</h1>
+        }
+    </style>
+    <!-- Carousel End -->
+    <h1 class="fs-5 fw-medium fst-italic text-primary text-center">ABOUT US</h1>
 
 
-       
 
 
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5">
 
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="section-title">
-                    
-                            <h3 class="">We Undertake all types of Catering Services in Hyderabad</h3>
-                        </div>
-                        <p class="k">
-                            With over 15 years of expertise in event management and catering, we have proudly served at more than 10,000 events, including 1,500+ weddings, creating unforgettable experiences for our clients. Our services are designed to cater to gatherings of all sizes, from intimate groups of 100 to grand celebrations of up to 5,000 guests. Whether it’s a wedding, corporate event, birthday, or any special occasion, 
-                            we bring passion, professionalism, and culinary excellence to ensure every moment is perfect.
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
 
-                        </p>
-                   
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="section-title">
+
+                        <h3 class="">We Undertake all types of Catering Services in Hyderabad</h3>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="row g-3">
-                            <div class="col-12 text-end">
-                               
-                                    <video autoplay muted loop id="myVideo" class="h-120 w-100 ss">
-                                        <source src="media/3510-171566772_tiny.mp4" type="video/mp4">
-                                    </video>
-                                
-                            </div>
-                          
+                    <p class="k">
+                        With over 15 years of expertise in event management and catering, we have proudly served at more
+                        than 10,000 events, including 1,500+ weddings, creating unforgettable experiences for our
+                        clients. Our services are designed to cater to gatherings of all sizes, from intimate groups of
+                        100 to grand celebrations of up to 5,000 guests. Whether it’s a wedding, corporate event,
+                        birthday, or any special occasion,
+                        we bring passion, professionalism, and culinary excellence to ensure every moment is perfect.
+
+                    </p>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-12 text-end">
+
+                            <video autoplay muted loop id="myVideo" class="h-120 w-100 ss">
+                                <source src="media/3510-171566772_tiny.mp4" type="video/mp4">
+                            </video>
+
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About End -->
-
-     
-
+    </div>
+    <!-- About End -->
 
 
 
-        <!-- Article End -->
 
 
-         <!-- Events Start -->
-         <div class="container-fluid event py-6">
-            <div class="container">
-                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-                    <small
-                        class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Latest
-                        Events</small>
-                    <h1 class="display-5 mb-5">Our Social & Professional Events Gallery</h1>
-                </div>
-                <div class="tab-class text-center">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp"
-                        data-wow-delay="0.1s">
-                        <li class="nav-item p-2">
-                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active"
-                                data-bs-toggle="pill" href="#tab-1">
-                                <span class="text-dark" style="width: 150px;">All Events</span>
-                            </a>
-                        </li>
-                       
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/alleventss/1.jpg" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <h4 class="me-auto">Catering Services</h4>
-                                                    <h4 class="me-auto">Sree Rajesh Caterers</h4>
-                                                    <h4 class="me-auto">9948321138</h4>
-                                                    <a href="img/alleventss/1.jpg" data-lightbox="event-1"
-                                                        class="my-auto"><i
-                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
+
+    <!-- Article End -->
+
+
+    <!-- Events Start -->
+    <div class="container-fluid event py-6">
+        <div class="container">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small
+                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Latest
+                    Events</small>
+                <h1 class="display-5 mb-5">Our Social & Professional Events Gallery</h1>
+            </div>
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp"
+                    data-wow-delay="0.1s">
+                    <li class="nav-item p-2">
+                        <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active"
+                            data-bs-toggle="pill" href="#tab-1">
+                            <span class="text-dark" style="width: 150px;">All Events</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/alleventss/1.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Wedding</h4>
+                                                <h4 class="me-auto">Catering Services</h4>
+                                                <h4 class="me-auto">Sree Rajesh Caterers</h4>
+                                                <h4 class="me-auto">088855 41199</h4>
+                                                <a href="img/alleventss/1.jpg" data-lightbox="event-1"
+                                                    class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/alleventss/2.jpg" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Corporate</h4>
-                                                    <h4 class="me-auto">Catering Services</h4>
-                                                    <h4 class="me-auto">Sree Rajesh Caterers</h4>
-                                                    <h4 class="me-auto">9948321138</h4>
-                                                    <a href="img/alleventss/2.jpg" data-lightbox="event-2"
-                                                        class="my-auto"><i
-                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/alleventss/2.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Corporate</h4>
+                                                <h4 class="me-auto">Catering Services</h4>
+                                                <h4 class="me-auto">Sree Rajesh Caterers</h4>
+                                                <h4 class="me-auto">088855 41199</h4>
+                                                <a href="img/alleventss/2.jpg" data-lightbox="event-2"
+                                                    class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/alleventss/3.jpg" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <h4 class="me-auto">Catering Services</h4>
-                                                    <h4 class="me-auto">Sree Rajesh Caterers</h4>
-                                                    <h4 class="me-auto">9948321138</h4>
-                                                    <a href="img/alleventss/3.jpg" data-lightbox="event-3"
-                                                        class="my-auto"><i
-                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/alleventss/3.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Wedding</h4>
+                                                <h4 class="me-auto">Catering Services</h4>
+                                                <h4 class="me-auto">Sree Rajesh Caterers</h4>
+                                                <h4 class="me-auto">088855 41199</h4>
+                                                <a href="img/alleventss/3.jpg" data-lightbox="event-3"
+                                                    class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/alleventss/4.jpg" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Buffet</h4>
-                                                    <h4 class="me-auto">Catering Services</h4>
-                                                    <h4 class="me-auto">Sree Rajesh Caterers</h4>
-                                                    <h4 class="me-auto">9948321138</h4>
-                                                    <a href="img/alleventss/4.jpg" data-lightbox="event-4"
-                                                        class="my-auto"><i
-                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/alleventss/4.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Buffet</h4>
+                                                <h4 class="me-auto">Catering Services</h4>
+                                                <h4 class="me-auto">Sree Rajesh Caterers</h4>
+                                                <h4 class="me-auto">088855 41199</h4>
+                                                <a href="img/alleventss/4.jpg" data-lightbox="event-4"
+                                                    class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/alleventss/5.jpg" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Cocktail</h4>
-                                                    <h4 class="me-auto">Catering Services</h4>
-                                                    <h4 class="me-auto">Sree Rajesh Caterers</h4>
-                                                    <h4 class="me-auto">9948321138</h4>
-                                                    <a href="img/alleventss/5.jpg" data-lightbox="event-5"
-                                                        class="my-auto"><i
-                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/alleventss/5.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Cocktail</h4>
+                                                <h4 class="me-auto">Catering Services</h4>
+                                                <h4 class="me-auto">Sree Rajesh Caterers</h4>
+                                                <h4 class="me-auto">088855 41199</h4>
+                                                <a href="img/alleventss/5.jpg" data-lightbox="event-5"
+                                                    class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/alleventss/6.jpg" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <h4 class="me-auto">Catering Services</h4>
-                                                    <h4 class="me-auto">Sree Rajesh Caterers</h4>
-                                                    <h4 class="me-auto">9948321138</h4>
-                                                    <a href="img/alleventss/6.jpg" data-lightbox="event-6"
-                                                        class="my-auto"><i
-                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/alleventss/6.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Wedding</h4>
+                                                <h4 class="me-auto">Catering Services</h4>
+                                                <h4 class="me-auto">Sree Rajesh Caterers</h4>
+                                                <h4 class="me-auto">088855 41199</h4>
+                                                <a href="img/alleventss/6.jpg" data-lightbox="event-6"
+                                                    class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/alleventss/7.jpg" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Buffet</h4>
-                                                    <h4 class="me-auto">Catering Services</h4>
-                                                    <h4 class="me-auto">Sree Rajesh Caterers</h4>
-                                                    <h4 class="me-auto">9948321138</h4>
-                                                    <a href="img/alleventss/7.jpg" data-lightbox="event-7"
-                                                        class="my-auto"><i
-                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/alleventss/7.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Buffet</h4>
+                                                <h4 class="me-auto">Catering Services</h4>
+                                                <h4 class="me-auto">Sree Rajesh Caterers</h4>
+                                                <h4 class="me-auto">088855 41199</h4>
+                                                <a href="img/alleventss/7.jpg" data-lightbox="event-7"
+                                                    class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/alleventss/8.jpg" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Corporate</h4>
-                                                    <h4 class="me-auto">Catering Services</h4>
-                                                    <h4 class="me-auto">Sree Rajesh Caterers</h4>
-                                                    <h4 class="me-auto">9948321138</h4>
-                                                    <a href="img/alleventss/8.jpg" data-lightbox="event-17"
-                                                        class="my-auto"><i
-                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/alleventss/8.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Corporate</h4>
+                                                <h4 class="me-auto">Catering Services</h4>
+                                                <h4 class="me-auto">Sree Rajesh Caterers</h4>
+                                                <h4 class="me-auto">088855 41199</h4>
+                                                <a href="img/alleventss/8.jpg" data-lightbox="event-17"
+                                                    class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/9.jpg" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <h4 class="me-auto">Catering Services</h4>
-                                                    <h4 class="me-auto">Sree Rajesh Caterers</h4>
-                                                    <h4 class="me-auto">9948321138</h4>
-                                                    <a href="img/9.jpg" data-lightbox="event-8"
-                                                        class="my-auto"><i
-                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/9.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Wedding</h4>
+                                                <h4 class="me-auto">Catering Services</h4>
+                                                <h4 class="me-auto">Sree Rajesh Caterers</h4>
+                                                <h4 class="me-auto">088855 41199</h4>
+                                                <a href="img/9.jpg" data-lightbox="event-8" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
-
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -417,12 +425,13 @@ object-fit: cover;
                 </div>
             </div>
         </div>
+    </div>
 
 
     </div>
-</div>
-</div>
-<!-- About End -->
+    </div>
+    </div>
+    <!-- About End -->
 
 
 
@@ -432,295 +441,307 @@ object-fit: cover;
 
 
 
-        <!-- services Start -->
-        <div class="container-fluid product py-5 my-5">
-            <div class="container py-5">
-                <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s"
-                    style="max-width: 500px;">
-                    <p class="fs-5 fw-medium fst-italic text-primary">Our Services</p>
-                  
+    <!-- services Start -->
+    <div class="container-fluid product py-5 my-5">
+        <div class="container py-5">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium fst-italic text-primary">Our Services</p>
+
+            </div>
+            <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
+                <a href="vegmenu.html" class="d-block product-item rounded">
+                    <img src="img/aboutimg2.4.jpg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="text-primary">Veg Menu</h4>
+                        <span class="text-body">Deliciously crafted vegetarian delights for a healthy and satisfying
+                            meal.</span>
+                    </div>
+                </a>
+                <a href="nonvegmenu.html" class="d-block product-item rounded">
+                    <img src="img/nonvegmenuimg.jpg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="text-primary"><br /><br />Non-Veg Menu</h4>
+                        <span class="text-body">Savor the richness of our expertly prepared non-veg delicacies.</span>
+                    </div>
+                </a>
+                <a href="bithdaypartydecorations.html" class="d-block product-item rounded">
+                    <img src="img/birthday2.jpeg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="text-primary">Birthday Party Decorations</h4>
+                        <span class="text-body">Transform your celebration with vibrant and enchanting birthday party
+                            decorations.</span>
+                    </div>
+                </a>
+                <a href="eventmanagementplanning.html" class="d-block product-item rounded">
+                    <img src="img/eventmanageimg.jpeg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="text-primary"><br />Event Management & Planning</h4>
+                        <span class="text-body">Seamlessly orchestrating memorable events with precision and
+                            creativity.</span>
+                    </div>
+                </a>
+
+
+
+                <a href="WeddingStageDecorations.html" class="d-block product-item rounded">
+                    <img src="img/marragedecoimg.jpeg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="text-primary">Wedding & Stage Decorations</h4>
+                        <span class="text-body">Creating enchanting wedding and stage decorations for your special
+                            day.</span>
+                    </div>
+                </a>
+
+                <a href="FlowersBalloonsDecorations.html" class="d-block product-item rounded">
+                    <img src="img/bellonsdecimg.jpg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="text-primary">Flowers & Balloons Decorations</h4>
+                        <span class="text-body">Joy and elegance through beautiful flower and balloon
+                            decorations.</span>
+                    </div>
+                </a>
+
+                <a href="PhotographyVediography.html" class="d-block product-item rounded">
+                    <img src="img/photographyimg.jpg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="text-primary"><br /><br /><br />Photography & Vediography</h4>
+                        <span class="text-body">Adding joy and elegance with stunning flower and balloon
+                            decorations.</span>
+                    </div>
+                </a>
+                <a href="HallLightDecorations.html" class="d-block product-item rounded">
+                    <img src="img/lightimag.jpg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="text-primary">Hall & Light Decorations</h4>
+                        <span class="text-body">Elevate your event with stunning hall and lighting decorations.</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- services end -->
+
+
+
+
+
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial py-5 my-5">
+        <div class="container py-5">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium fst-italic text-white">Testimonial</p>
+                <h1 class="display-6 text-white">What our clients say about our Caterers</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
+                <div class="testimonial-item p-4 p-lg-5">
+                    <p class="mb-4">I recommend everyone to use them. You will feel so special and not just like
+                        another bride.
+                        We did a sit down dinner and the service was AMAZING. No one had to wait on food or drinks.
+                    </p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0" src="img/R.png" alt="">
+
+                        <div class="text-start ms-3">
+                            <h5>RAJENDAR PRASAD</h5>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
-                    <a href="vegmenu.html" class="d-block product-item rounded">
-                        <img src="img/aboutimg2.4.jpg" alt="">
-                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                            <h4 class="text-primary">Veg Menu</h4>
-                            <span class="text-body">Deliciously crafted vegetarian delights for a healthy and satisfying meal.</span>
+                <div class="testimonial-item p-4 p-lg-5">
+                    <p class="mb-4 k">AAAAAAmazing! That’s the best way to put it. From price, to
+                        food, to how the wedding day went, Simply Catering was just amazing. Event was
+                        the coordinator for my actual wedding day and it went on without a hitch.
+                        Everybody raved about the food. It was exactly what I pictured when I thought
+                        of my wedding day caterer. Thank you so much for everything, Sree Rajesh Caterers!! My husband
+                        has 4 more brothers and sisters who will eventually be getting married and we’ll definitely
+                        we recommending you to
+                        them when the time comes!! Thanks again!</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0" src="img/R.png" alt="">
+                        <div class="text-start ms-3">
+                            <h5>VIKRAM RAO</h5>
+
                         </div>
-                    </a>
-                    <a href="nonvegmenu.html" class="d-block product-item rounded">
-                        <img src="img/nonvegmenuimg.jpg" alt="">
-                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                            <h4 class="text-primary"><br /><br />Non-Veg Menu</h4>
-                            <span class="text-body">Savor the richness of our expertly prepared non-veg delicacies.</span>
+                    </div>
+                </div>
+                <div class="testimonial-item p-4 p-lg-5">
+                    <p class="mb-4 k">Working with Sree Rajesh Caterers on my wedding day was just amazing.
+                        On my wedding day, everyone was praising the food and service and they were really
+                        professional.
+                        The bartenders were really kind and did an excellent job. I'm very happy I decided to have
+                        Sree Rajesh
+                        Catering handle the catering for my wedding. They performed incredibly well on
+                        everything.
+                        Everything was flawless down to the smallest detail!</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0" src="img/R.png" alt="">
+                        <div class="text-start ms-3">
+                            <h5>SEETHA RAMA RAJU</h5>
+
                         </div>
-                    </a>
-                    <a href="bithdaypartydecorations.html" class="d-block product-item rounded">
-                        <img src="img/birthday2.jpeg" alt="">
-                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                            <h4 class="text-primary">Birthday Party Decorations</h4>
-                            <span class="text-body">Transform your celebration with vibrant and enchanting birthday party decorations.</span>
-                        </div>
-                    </a>
-                    <a href="eventmanagementplanning.html" class="d-block product-item rounded">
-                        <img src="img/eventmanageimg.jpeg" alt="">
-                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                            <h4 class="text-primary"><br />Event Management & Planning</h4>
-                            <span class="text-body">Seamlessly orchestrating memorable events with precision and creativity.</span>
-                        </div>
-                    </a>
+                    </div>
+                </div>
 
 
 
-                    <a href="WeddingStageDecorations.html" class="d-block product-item rounded">
-                        <img src="img/marragedecoimg.jpeg" alt="">
-                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                            <h4 class="text-primary">Wedding & Stage Decorations</h4>
-                            <span class="text-body">Creating enchanting wedding and stage decorations for your special day.</span>
-                        </div>
-                    </a>
 
-                    <a href="FlowersBalloonsDecorations.html" class="d-block product-item rounded">
-                        <img src="img/bellonsdecimg.jpg" alt="">
-                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                            <h4 class="text-primary">Flowers & Balloons Decorations</h4>
-                            <span class="text-body">Joy and elegance through beautiful flower and balloon decorations.</span>
-                        </div>
-                    </a>
 
-                    <a href="PhotographyVediography.html" class="d-block product-item rounded">
-                        <img src="img/photographyimg.jpg" alt="">
-                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                            <h4 class="text-primary"><br /><br /><br />Photography & Vediography</h4>
-                            <span class="text-body">Adding joy and elegance with stunning flower and balloon decorations.</span>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+    <div class="whatsapp">
+        <a href="https://wa.me/+918885541199"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Contact Start -->
+    <div class="container-xxl contact py-5">
+        <div class="container">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium fst-italic text-primary">Contact Us</p>
+                <h1 class="display-6">Contact us right now</h1>
+            </div>
+            <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-8">
+                    <p class="text-center mb-5 k">Contact Sree Rajesh Caterers today for a delightful culinary
+                        experience that exceeds expectations. Whether it's a wedding, corporate event, or private
+                        gathering, our expert team ensures every dish is crafted with passion and precision, promising
+                        an unforgettable dining experience.
+                    </p>
+                    <div class="row g-5">
+                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="btn-square mx-auto mb-3">
+                                <i class="fa fa-envelope fa-2x text-white"></i>
+                            </div>
+                            <p class="mb-0">info@SreeRajeshCaterers.com</p>
+
                         </div>
-                    </a>
-                    <a href="HallLightDecorations.html" class="d-block product-item rounded">
-                        <img src="img/lightimag.jpg" alt="">
-                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                            <h4 class="text-primary">Hall & Light Decorations</h4>
-                            <span class="text-body">Elevate your event with stunning hall and lighting decorations.</span>
+                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="btn-square mx-auto mb-3">
+                                <i class="fa fa-phone fa-2x text-white"></i>
+                            </div>
+                            <p class="mb-2">088855 41199</p>
+
                         </div>
-                    </a>
+                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="btn-square mx-auto mb-3">
+                                <i class="fa fa-map-marker-alt fa-2x text-white"></i>
+                            </div>
+                            <p class="mb-0">6-1-311, Sahu Rd, Prasanth Nagar, Hyderabad, Miyapur, Telangana 500049</p>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- services end -->
+    </div>
+    <!-- Contact Start -->
 
 
-
-
-  
-
-
-        <!-- Testimonial Start -->
-        <div class="container-fluid testimonial py-5 my-5">
-            <div class="container py-5">
-                <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s"
-                    style="max-width: 500px;">
-                    <p class="fs-5 fw-medium fst-italic text-white">Testimonial</p>
-                    <h1 class="display-6 text-white">What our clients say about our Caterers</h1>
-                </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="testimonial-item p-4 p-lg-5">
-                        <p class="mb-4">I recommend everyone to use them. You will feel so special and not just like
-                            another bride.
-                            We did a sit down dinner and the service was AMAZING. No one had to wait on food or drinks.
-                        </p>
-                        <div class="d-flex align-items-center justify-content-center">
-                            <img class="img-fluid flex-shrink-0" src="img/R.png" alt="">
-
-                            <div class="text-start ms-3">
-                                <h5>RAJENDAR PRASAD</h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item p-4 p-lg-5">
-                        <p class="mb-4 k">AAAAAAmazing! That’s the best way to put it. From price, to
-                            food, to how the wedding day went, Simply Catering was just amazing. Event was
-                            the coordinator for my actual wedding day and it went on without a hitch.
-                            Everybody raved about the food. It was exactly what I pictured when I thought
-                            of my wedding day caterer. Thank you so much for everything, Sree Rajesh Caterers!! My husband
-                            has 4 more brothers and sisters who will eventually be getting married and we’ll definitely
-                            we recommending you to
-                            them when the time comes!! Thanks again!</p>
-                        <div class="d-flex align-items-center justify-content-center">
-                            <img class="img-fluid flex-shrink-0" src="img/R.png" alt="">
-                            <div class="text-start ms-3">
-                                <h5>VIKRAM RAO</h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item p-4 p-lg-5">
-                        <p class="mb-4 k">Working with Sree Rajesh Caterers on my wedding day was just amazing.
-                            On my wedding day, everyone was praising the food and service and they were really
-                            professional.
-                            The bartenders were really kind and did an excellent job. I'm very happy I decided to have
-                            Sree Rajesh 
-                            Catering handle the catering for my wedding. They performed incredibly well on
-                            everything.
-                            Everything was flawless down to the smallest detail!</p>
-                        <div class="d-flex align-items-center justify-content-center">
-                            <img class="img-fluid flex-shrink-0" src="img/R.png" alt="">
-                            <div class="text-start ms-3">
-                                <h5>SEETHA RAMA RAJU</h5>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                  
-
-                  
-
-
-
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-        <div class="whatsapp">
-            <a href="https://wa.me/+919246878478"><i class="fab fa-whatsapp"></i></a>
-          </div>
-
-        <!-- Contact Start -->
-        <div class="container-xxl contact py-5">
-            <div class="container">
-                <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s"
-                    style="max-width: 500px;">
-                    <p class="fs-5 fw-medium fst-italic text-primary">Contact Us</p>
-                    <h1 class="display-6">Contact us right now</h1>
-                </div>
-                <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="col-lg-8">
-                        <p class="text-center mb-5 k">Contact Sree Rajesh Caterers today for a delightful culinary experience that exceeds expectations. Whether it's a wedding, corporate event, or private gathering, our expert team ensures every dish is crafted with passion and precision, promising an unforgettable dining experience.
-                        </p>
-                        <div class="row g-5">
-                            <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="btn-square mx-auto mb-3">
-                                    <i class="fa fa-envelope fa-2x text-white"></i>
-                                </div>
-                                <p class="mb-0">info@SreeRajeshCaterers.com</p>
-                               
-                            </div>
-                            <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="btn-square mx-auto mb-3">
-                                    <i class="fa fa-phone fa-2x text-white"></i>
-                                </div>
-                                <p class="mb-2">92468 78478</p>
-                               
-                            </div>
-                            <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="btn-square mx-auto mb-3">
-                                    <i class="fa fa-map-marker-alt fa-2x text-white"></i>
-                                </div>
-                                <p class="mb-0">12-11-502, L N nagar, BJP Party Office Lane, Warasiguda, Secunderabad, Telangana 500061</p>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact Start -->
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="text-primary mb-4">Our Office</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>12-11-502, L N nagar, BJP Party Office Lane, Warasiguda, Secunderabad, Telangana 500061
-                        </p>
-                        <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>92468 78478</p>
-                        <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i> info@SreeRajeshCaterers.com</p>
-                       
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="text-primary mb-4">Quick Links</h4>   
-
-                       
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>6-1-311, Sahu Rd, Prasanth Nagar, Hyderabad, Miyapur, Telangana 500049
                         
-                        
-                        <a class="btn btn-link" href="index.html">Home</a>
-                        <a class="btn btn-link" href="about.html">About Us</a>
-                        <a class="btn btn-link" href="blog.html">Blog</a>
-                        <a class="btn btn-link" href="vegmenu.html">Services</a>
-                        <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="text-primary mb-4">OPENING HOURS</h4>
-                        <p class="mb-1">Monday: 9:Am - 10PM</p>
-                       
-                        <p class="mb-1">Tue-Wed : 9:Am - 10PM</p>
-                        
-                        <p class="mb-1">Thu-Fri : 9:Am - 10PM</p>
-                        <p class="mb-1">Sat-Sun : 9:AM - 10PM</p>
-                       
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <a href="index.html" class="navbar-brand">
-                            <img class="img-fluid" src="img/Sree Rajesh Caterers.png" alt="Logo">
-                            <img class="img-fluid"  src="media/158526-816999744-tiny-unscreen.gif" alt="Logo">
-                        </a>
-                        <div class="d-flex pt-3">
-                            <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>                                  
-                            <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-google-plus"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-instagram"></i></a>         
-                           <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                     
-                        </div>
+                    </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>088855 41199</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i> info@SreeRajeshCaterers.com</p>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Quick Links</h4>
+
+
+
+
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="blog.html">Blog</a>
+                    <a class="btn btn-link" href="vegmenu.html">Services</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">OPENING HOURS</h4>
+                    <p class="mb-1">Monday: 9:Am - 10PM</p>
+
+                    <p class="mb-1">Tue-Wed : 9:Am - 10PM</p>
+
+                    <p class="mb-1">Thu-Fri : 9:Am - 10PM</p>
+                    <p class="mb-1">Sat-Sun : 9:AM - 10PM</p>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="navbar-brand">
+                        <img class="img-fluid" src="img/Sree Rajesh Caterers.png" alt="Logo">
+                        <img class="img-fluid" src="media/158526-816999744-tiny-unscreen.gif" alt="Logo">
+                    </a>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i
+                                class="fab fa-google-plus"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i
+                                class="fab fa-linkedin-in"></i></a>
+
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
+    <!-- Footer End -->
 
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="fw-medium" href="#">Sree Rajesh Caterers</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        Designed By <a class="fw-medium" href="https://www.thepatternscompany.com/">The Patterns
-                            Company</a>
-                    </div>
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-medium" href="#">Sree Rajesh Caterers</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <a class="fw-medium" href="https://www.thepatternscompany.com/">The Patterns
+                        Company</a>
                 </div>
             </div>
         </div>
-        <!-- Copyright End -->
+    </div>
+    <!-- Copyright End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-                class="bi bi-arrow-up"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 
-        <script>
-            lightbox.option({
-                'resizeDuration': 200,
-                'wrapAround': true
-            });
-        </script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        });
+    </script>
 </body>
 
 </html>

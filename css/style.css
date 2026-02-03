@@ -309,6 +309,11 @@ h4,
         border-radius: 10px !important;
         padding: 5px 10px !important;
     }
+
+    /* Hide hero text on mobile */
+    .header-carousel .carousel-caption {
+        display: none !important;
+    }
 }
 
 @media (min-width: 992px) {

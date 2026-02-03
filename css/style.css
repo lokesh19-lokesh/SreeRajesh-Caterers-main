@@ -54,8 +54,9 @@ body {
     font-weight: 900;
 }
 
+/* Navbar Background - Deep Teal */
 .bgs {
-    background-color: #bb7425;
+    background-color: #055160 !important;
 }
 
 /*** service start ***/
@@ -779,6 +780,7 @@ h4,
 /*** Footer ***/
 .footer {
     color: #B0B9AE;
+    background-color: #055160 !important;
 }
 
 .footer .btn.btn-link {

@@ -236,10 +236,22 @@ h4,
 .navbar .navbar-brand {
     position: absolute;
     padding: 0;
-    width: 170px;
-    height: 135px;
-    top: 0;
+    width: 120px;
+    height: 90px;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-brand img {
+    max-height: 90px;
+    width: auto;
+}
+
+.navbar .navbar-brand img:last-child {
+    max-height: 40px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -888,4 +900,21 @@ h4,
 
 .ho {
     height: 600px;
+}
+
+/* Footer Logo Proportions */
+.footer .navbar-brand {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer .navbar-brand img {
+    max-height: 100px;
+    width: auto;
+}
+
+.footer .navbar-brand img:last-child {
+    max-height: 30px;
 }

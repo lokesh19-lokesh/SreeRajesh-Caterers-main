@@ -936,3 +936,59 @@ h4,
 .footer .navbar-brand img:last-child {
     max-height: 90px;
 }
+/* Service Sidebar Styles */
+.service-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background-color: #055160;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+    padding: 10px 0;
+}
+
+.service-sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 60px; /* Collapsed width */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.service-sidebar a:hover {
+    width: 260px; /* Expanded width */
+    background-color: #FFC107; /* Gold */
+    color: #000;
+}
+
+.service-sidebar a i {
+    font-size: 24px;
+    min-width: 30px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.service-sidebar a span {
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.2s ease 0.1s;
+}
+
+.service-sidebar a:hover span {
+    opacity: 1;
+}
+
+/* Hide on mobile and show original logic if needed, or just hide */
+@media (max-width: 991.98px) {
+    .service-sidebar {
+        display: none;
+    }
+}

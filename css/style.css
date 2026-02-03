@@ -236,8 +236,8 @@ h4,
 .navbar .navbar-brand {
     position: absolute;
     padding: 0;
-    width: 120px;
-    height: 90px;
+    width: 250px;
+    height: 100px;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
@@ -251,7 +251,7 @@ h4,
 }
 
 .navbar .navbar-brand img:last-child {
-    max-height: 40px;
+    max-height: 80px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -279,7 +279,7 @@ h4,
 
 @media (max-width: 991.98px) {
     .navbar .navbar-brand {
-        width: 126px;
+        width: 180px;
         height: 100px;
     }
 
@@ -904,9 +904,10 @@ h4,
 
 /* Footer Logo Proportions */
 .footer .navbar-brand {
-    width: 100px;
+    width: 250px;
     height: auto;
-    display: block;
+    display: flex;
+    align-items: center;
     margin-bottom: 15px;
 }
 
@@ -916,5 +917,5 @@ h4,
 }
 
 .footer .navbar-brand img:last-child {
-    max-height: 30px;
+    max-height: 90px;
 }

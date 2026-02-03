@@ -337,6 +337,55 @@ h4,
 }
 
 
+/* Menu Button Styling */
+.navbar-nav .nav-link.btn-menu {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 10px 20px !important;
+    background: transparent;
+    transition: all 0.3s ease;
+    color: #ffffff !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link.btn-menu:hover {
+    background: #ffffff;
+    color: var(--primary) !important;
+}
+
+.navbar-nav .nav-link.btn-menu:active {
+    animation: menu-pulse 0.4s ease-out;
+}
+
+@keyframes menu-pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+
+    70% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link.btn-menu {
+        margin-left: 0;
+        margin-top: 10px;
+        display: inline-block;
+        width: fit-content;
+    }
+}
+
+
 /*------------------------------------------------------------------
     Contact info
 -------------------------------------------------------------------*/
@@ -779,7 +828,7 @@ h4,
 
 /*** Footer ***/
 .footer {
-    color: #B0B9AE;
+    color: #ffffff;
     background-color: #198754 !important;
 }
 
@@ -788,7 +837,7 @@ h4,
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #B0B9AE;
+    color: #ffffff;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
@@ -799,7 +848,7 @@ h4,
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    color: var(--primary);
+    color: #ffffff;
     margin-right: 10px;
 }
 
@@ -810,15 +859,29 @@ h4,
 }
 
 .copyright {
-    color: #B0B9AE;
+    color: #ffffff;
 }
 
 .copyright {
     background: #252525;
 }
 
+.footer .text-primary {
+    color: #ffffff !important;
+}
+
+.copyright a {
+    color: #ffffff !important;
+}
+
 .copyright a:hover {
     color: #FFFFFF !important;
+}
+
+.footer .btn-square {
+    background: transparent !important;
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
 }
 
 .spamclass {
@@ -945,7 +1008,7 @@ h4,
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    background-color: #055160;
+    background-color: #198754;
     border-radius: 0 10px 10px 0;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     z-index: 999;

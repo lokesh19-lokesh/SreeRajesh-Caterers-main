@@ -54,9 +54,9 @@ body {
     font-weight: 900;
 }
 
-/* Navbar Background - Deep Teal */
+/* Navbar Background - Green */
 .bgs {
-    background-color: #055160 !important;
+    background-color: #198754 !important;
 }
 
 /*** service start ***/
@@ -249,7 +249,7 @@ h4,
 }
 
 .navbar .navbar-brand img {
-    max-height: 90px;
+    max-height: 110px;
     width: auto;
 }
 
@@ -780,7 +780,7 @@ h4,
 /*** Footer ***/
 .footer {
     color: #B0B9AE;
-    background-color: #055160 !important;
+    background-color: #198754 !important;
 }
 
 .footer .btn.btn-link {

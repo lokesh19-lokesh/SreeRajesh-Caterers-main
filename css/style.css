@@ -281,8 +281,12 @@ h4,
 
 @media (max-width: 991.98px) {
     .navbar .navbar-brand {
+        position: absolute;
         width: 180px;
         height: 100px;
+        top: 0;
+        left: 0;
+        transform: none;
     }
 
     .navbar .navbar-nav .nav-link {
@@ -291,8 +295,12 @@ h4,
     }
 
     .navbar .navbar-nav {
-        margin-top: 75px;
+        margin-top: 115px;
         border-top: 1px solid #EEEEEE;
+    }
+
+    .navbar-toggler {
+        margin-top: 25px;
     }
 
     .navbar-toggler {

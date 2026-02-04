@@ -121,5 +121,14 @@
         nav: false,
     });
 
+    // Call Button Animation
+    $('.btn-call').on('click', function () {
+        var $this = $(this);
+        $this.addClass('animate-click');
+        setTimeout(function () {
+            $this.removeClass('animate-click');
+        }, 400);
+    });
+
 })(jQuery);
 

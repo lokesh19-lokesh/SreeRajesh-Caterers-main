@@ -352,6 +352,30 @@ h4,
     }
 }
 
+/* Custom Dropdown Styling */
+.navbar .nav-item.dropdown .dropdown-menu {
+    background-color: #198754 !important;
+    /* Premium Green */
+    border-radius: 8px;
+    padding: 10px 0;
+    min-width: 250px;
+}
+
+.navbar .nav-item.dropdown .dropdown-item {
+    color: #ffffff !important;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+}
+
+.navbar .nav-item.dropdown .dropdown-item:hover {
+    background-color: var(--primary) !important;
+    /* Yellow */
+    color: var(--dark) !important;
+    padding-left: 25px;
+}
+
 
 /* Menu Button Styling */
 .navbar-nav .nav-link.btn-menu {

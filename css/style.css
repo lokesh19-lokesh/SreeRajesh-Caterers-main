@@ -376,6 +376,13 @@ h4,
     padding-left: 25px;
 }
 
+/* Enhanced Navbar Shift */
+@media (min-width: 992px) {
+    .navbar-shift {
+        margin-right: 180px !important;
+    }
+}
+
 
 /* Menu Button Styling */
 .navbar-nav .nav-link.btn-menu {

@@ -1256,3 +1256,144 @@ h4,
         /* Smaller expansion width on mobile */
     }
 }
+
+/* Bubbles Animation for Footer Link */
+.bubbles-link {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.bubbles-link:hover {
+    color: var(--primary) !important;
+}
+
+/* Bubbles container */
+.bubbles-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.bubbles-link:hover::before {
+    opacity: 1;
+}
+
+/* Individual bubbles */
+@keyframes bubble-rise {
+    0% {
+        bottom: -10px;
+        opacity: 0;
+        transform: translateX(0) scale(0);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        bottom: 100px;
+        opacity: 0;
+        transform: translateX(var(--bubble-drift)) scale(1.2);
+    }
+}
+
+/* Create multiple bubbles on hover */
+.bubbles-link:hover::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 193, 7, 0.8), rgba(255, 193, 7, 0.3));
+    border-radius: 50%;
+    bottom: -10px;
+    left: 20%;
+    animation: bubble-rise 2s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5),
+        inset 2px 2px 3px rgba(255, 255, 255, 0.5);
+    --bubble-drift: -20px;
+}
+
+/* Additional bubbles using pseudo-element on span */
+.bubbles-link {
+    overflow: visible;
+}
+
+.bubbles-link:hover {
+    animation: text-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes text-glow {
+    from {
+        text-shadow: 0 0 5px rgba(255, 193, 7, 0.3);
+    }
+
+    to {
+        text-shadow: 0 0 10px rgba(255, 193, 7, 0.6);
+    }
+}
+
+/* Create multiple bubbles using CSS variables and animation delays */
+@property --bubble-1 {
+    syntax: '<number>';
+    initial-value: 0;
+    inherits: false;
+}
+
+/* Bubbles effect with multiple animated elements */
+.bubbles-link::before {
+    content: '○ ○ ○ ○ ○';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 8px;
+    color: var(--primary);
+    opacity: 0;
+    animation: none;
+}
+
+.bubbles-link:hover::before {
+    animation: bubbles-float 2s ease-in-out infinite;
+}
+
+@keyframes bubbles-float {
+    0% {
+        bottom: -10px;
+        opacity: 0;
+        transform: scale(0.5) translateY(0);
+        letter-spacing: 5px;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+        letter-spacing: 12px;
+    }
+
+    80% {
+        opacity: 0.3;
+    }
+
+    100% {
+        bottom: 50px;
+        opacity: 0;
+        transform: scale(1.5) translateY(-20px);
+        letter-spacing: 20px;
+    }
+}

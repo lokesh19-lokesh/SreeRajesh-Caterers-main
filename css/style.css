@@ -429,41 +429,22 @@ h4,
         width: fit-content;
     }
 
-    /* Fix dropdown menu for mobile */
+    /* Fix dropdown menu for mobile - Show all items - FORCED */
     .navbar .nav-item.dropdown .dropdown-menu {
         position: static !important;
-        float: none;
-        width: 100%;
-        margin-top: 5px;
+        float: none !important;
+        width: 100% !important;
+        margin-top: 5px !important;
         background-color: rgba(255, 255, 255, 0.1) !important;
-        /* Slightly lighter than navbar */
-        border: none;
-        box-shadow: none;
-        max-height: 280px !important;
-        /* Refined height to force scrolling */
-        overflow-y: auto !important;
-        /* Force vertical scrolling */
-        overflow-x: hidden !important;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: thin;
-        scrollbar-color: var(--primary) rgba(255, 255, 255, 0.1);
-    }
-
-    /* Custom scrollbar styling for the mobile menu dropdown - Forced visibility */
-    .navbar .nav-item.dropdown .dropdown-menu::-webkit-scrollbar {
-        width: 8px !important;
+        border: none !important;
+        box-shadow: none !important;
+        max-height: none !important;
+        min-height: auto !important;
+        height: auto !important;
+        overflow: visible !important;
+        overflow-y: visible !important;
+        overflow-x: visible !important;
         display: block !important;
-    }
-
-    .navbar .nav-item.dropdown .dropdown-menu::-webkit-scrollbar-thumb {
-        background-color: var(--primary) !important;
-        border-radius: 10px;
-        border: 2px solid rgba(0, 0, 0, 0);
-        background-clip: padding-box;
-    }
-
-    .navbar .nav-item.dropdown .dropdown-menu::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.05) !important;
     }
 
     .navbar .nav-item.dropdown .dropdown-item {

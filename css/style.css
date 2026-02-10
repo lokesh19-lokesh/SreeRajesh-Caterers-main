@@ -429,7 +429,7 @@ h4,
         width: fit-content;
     }
 
-    /* Fix dropdown menu for mobile - Show all items - FORCED */
+    /* Fix dropdown menu for mobile - Hidden by default with scrolling */
     .navbar .nav-item.dropdown .dropdown-menu {
         position: static !important;
         float: none !important;
@@ -438,13 +438,38 @@ h4,
         background-color: rgba(255, 255, 255, 0.1) !important;
         border: none !important;
         box-shadow: none !important;
-        max-height: none !important;
-        min-height: auto !important;
-        height: auto !important;
-        overflow: visible !important;
-        overflow-y: visible !important;
-        overflow-x: visible !important;
+        max-height: 280px !important;
+        /* Fixed height to enable scrolling */
+        overflow-y: scroll !important;
+        /* Always show scrollbar */
+        overflow-x: hidden !important;
+        display: none !important;
+        /* Hidden by default */
+        -webkit-overflow-scrolling: touch;
+        /* Smooth iOS scrolling */
+    }
+
+    /* Show dropdown when Bootstrap adds .show class (on click) */
+    .navbar .nav-item.dropdown .dropdown-menu.show {
         display: block !important;
+    }
+
+    /* Visible scrollbar for mobile dropdown */
+    .navbar .nav-item.dropdown .dropdown-menu::-webkit-scrollbar {
+        width: 10px !important;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar .nav-item.dropdown .dropdown-menu::-webkit-scrollbar-thumb {
+        background-color: #ffc107 !important;
+        /* Yellow for visibility */
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar .nav-item.dropdown .dropdown-menu::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
     }
 
     .navbar .nav-item.dropdown .dropdown-item {
